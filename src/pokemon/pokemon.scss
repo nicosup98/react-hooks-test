@@ -1,0 +1,15 @@
+.pokemon-box{
+   display: flex;
+   align-items: flex-end;
+}
+.hover-animation:hover{
+    transform: scale(1.1);
+    transition: linear .15s;
+    cursor: pointer;
+}
+.hover-animation{
+    transition: linear .15s;
+}
+.full-length{
+    width: 100%;
+}
