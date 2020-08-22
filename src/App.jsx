@@ -21,7 +21,7 @@ function App() {
               <Link className='title has-text-light' to='/'>Hooks</Link>
             </div>
           </div>
-          <div className="navbar-menu">
+          <div className="navbar-menu is-active">
             <div className="navbar-start">
               <div className="navbar-item">
                 <Link to='/chistes'>chistes</Link>
