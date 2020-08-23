@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import { usePokemonInput } from './pokemon.hook'
-import { PokemonApiGet,PokemonApiGetNombre } from './apiCalls/pokemon.apiCall'
+import { PokemonApiGet,PokemonApiGetNombre } from '../apiCalls/pokemon/pokemon.apiCall'
 import './pokemon.scss'
 export const Pokemon = () => {
     const [listPokemon, setListPokemon] = useState([])
