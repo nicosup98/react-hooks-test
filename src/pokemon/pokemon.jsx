@@ -27,8 +27,10 @@ export const Pokemon = () => {
     }, [listPokemon])
 
     const getPokemonName = async ()=>{
+        setLoading(true)
         const pokemon = await PokemonApiGetNombre(input)
         setListPokemon(pkms=>[pokemon,...pkms])
+        setLoading(false)
     }
     /** 
      * @param {any} e

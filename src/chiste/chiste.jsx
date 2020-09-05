@@ -1,13 +1,15 @@
 import React,{useState} from 'react'
 import { getChiste } from "../apiCalls/chiste/chiste.apiCall"
+import './chiste.scss'
 export const Chiste = ()=>{
-    const [chiste,setChiste] = useState(null)
+    const [chiste,setChiste] = useState("presioname")
     const callChiste = async ()=>{
         const resp = await getChiste()
-        setChiste(resp.data)
+        console.log({resp})
+        setChiste(resp.data.joke)
     }
     return(
-        <div className="container">
+        <div className="container pointer">
             <div className="box" onClick={callChiste}>
                 <h2 className="title">
                     {chiste}
